@@ -1,0 +1,17 @@
+name: Project-Actions
+
+on: push
+
+jobs:
+  project-actions:
+    name: Project actions code base
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Project-Actions
+        uses: github/project-actions@v4
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
