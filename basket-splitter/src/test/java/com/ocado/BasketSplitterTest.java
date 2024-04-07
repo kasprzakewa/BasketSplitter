@@ -25,8 +25,8 @@ public class BasketSplitterTest
     @Before
     public void setUp() throws FileNotFoundException, IOException 
     {
-        basketSplitter = new BasketSplitter("/home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/example_config.json");
-        items = basketSplitter.loadBasket("/home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/example_basket.json");
+        basketSplitter = new BasketSplitter("/home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/examples/example_config.json");
+        items = basketSplitter.loadBasket("/home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/examples/example_basket.json");
         splitItems = basketSplitter.split(items);
     }
 
@@ -54,7 +54,7 @@ public class BasketSplitterTest
     public void testSaveBasket() throws IOException
     {
         String expectedJSON = "{\"Courier\":[\"Garden Chair\",\"Espresso Machine\"],\"Express Delivery\":[\"Cold Beer (330ml)\",\"Steak (300g)\",\"AA Battery (4 Pcs.)\",\"Carrots (1kg)\"]}";
-        String actualJSON = new String(Files.readAllBytes(Paths.get("/home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/example_output.json")));
+        String actualJSON = new String(Files.readAllBytes(Paths.get("/home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/examples/example_output.json")));
         JSONAssert.assertEquals(expectedJSON, actualJSON, true);
     }
 }
