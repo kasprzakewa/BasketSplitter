@@ -171,6 +171,8 @@ In our algorithm, we’ve made a small modification to ensure that elements do n
   
   - **Strawberries** can be delivered either via a **Pick-up Point** or by **Courier**.
   - **The Dining table** is exclusively available for delivery through the **Courier** service.
+ 
+- **Warning:** you can add up to 1000 items and 10 different deliveries to your config file
 
 <h3>2. Basket Optimization</h3>
 
@@ -182,7 +184,8 @@ In our algorithm, we’ve made a small modification to ensure that elements do n
     "Dining Table"
   ]
    ```
-  
+
+- **Warning** you can add up to 100 items to your basket
 - BasketSplitter will intelligently **group items** from the basket to minimize the number of deliveries.
 
 <h3>3. Output File Saving</h3>
