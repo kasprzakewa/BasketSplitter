@@ -8,8 +8,8 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONException;
 
-import java.io.BufferedReader;
 import java.io.FileNotFoundException;
+import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -38,7 +38,7 @@ public class BasketSplitter
         } 
         catch (JSONException | IOException e) 
         {
-            e.printStackTrace();
+            e.getMessage();
         }
     }
 
@@ -202,7 +202,7 @@ public class BasketSplitter
         } 
         catch (IOException e) 
         {
-            e.printStackTrace();
+            e.getMessage();
         }
     }    
 }

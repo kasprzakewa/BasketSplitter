@@ -1,5 +1,3 @@
-package com.ocado;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -26,7 +24,7 @@ public class ExampleApp
         } 
         catch (IOException e) 
         {
-            e.printStackTrace();
+            e.getMessage();
         } 
 
         System.out.println("Basket has been split and saved to file output.json.");

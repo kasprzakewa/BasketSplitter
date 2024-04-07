@@ -18,7 +18,6 @@ import com.ocado.basket.BasketSplitter;
 
 public class BasketSplitterTest 
 {
-
     private BasketSplitter basketSplitter;
     private Map<String, List<String>> splitItems;
     private List<String> items;
