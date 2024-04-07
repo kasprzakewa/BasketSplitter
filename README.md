@@ -129,7 +129,7 @@ Let’s illustrate the problem with a simple example:
 <br>
 
   ```math
-  U = {1, 2, 3, 4, 5}
+  U = {1, 2, 3, 4, 5, 6}
   ```
 <br>
 
@@ -137,7 +137,7 @@ Let’s illustrate the problem with a simple example:
 <br>
 
   ```math
-  S = \{ \{1,2,3\}, \{2,4\}, \{3,4\}, \{4,5\} \}
+  S = \{ \{1,2,3,6\}, \{1,2,4\}, \{3,4,5\} \}
   ```
 <br>
 
@@ -145,7 +145,7 @@ Clearly, the union of all sets in S covers the entire universe U. However, we ca
 <br>
 
   ```math
-  \{ \{1,2,3\}, \{4,5\} \}
+  \{ \{1,2,3,6\}, \{4,5\} \}
   ```
 <br>
 Therefore, the solution to the set cover problem in this case has a size of 2.
