@@ -90,7 +90,7 @@ java -cp <path_to_jar> Your_App.java
 ```
 <br>
 
-And that’s it! You’re all set to use **BasketSplitter** in your projects.
+And that’s it! You’re all set to use **BasketSplitter** in your projects. If you’d like to see an **example app**, it’s available in the **source code**.
 
 # Set Cover Problem for Intelligent Delivery Distribution
 
@@ -141,8 +141,6 @@ Clearly, the union of all sets in S covers the entire universe U. However, we ca
   ```
 <br>
 Therefore, the solution to the set cover problem in this case has a size of 2.
-
-
 
 # Features
 <h3>1. Config File Loading</h3>
