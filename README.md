@@ -9,6 +9,10 @@ Say goodbye to receiving multiple small packages for individual items! BasketSpl
 
 # Using BasketSplitter: A Step-by-Step Guide
 
+<h3>Warning</h3>
+
+- Make sure you have **Java 17** or higher version to avoid "Major-Minor Version" issue.
+
 <h3>Method 1: Building from Source</h3>
 
 <h4>Clone the Repository:</h4>
@@ -48,6 +52,8 @@ Replace **<repository_url>** with the actual URL you copied.
 
 <h4>Download the JAR File:</h4>
 
+
+
 - If you prefer not to build from source, you can directly **download** the **basket_splitter.jar** file from the repository.
 - Look for the file in the repository’s **code section**.
 
@@ -76,6 +82,7 @@ If you’re working with a Maven project:
 <h4>Basic Java App:</h4>
 
 If you’re working with a basic Java application:
+
 
 - **Compile** your Java code along with the **basket_splitter.jar**:
 
