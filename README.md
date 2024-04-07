@@ -1,4 +1,4 @@
-# BasketSplitter 🚛
+# BasketSplitter
 
 <p align="center">
   <img src="https://th.bing.com/th/id/OIG3.eB50HPX.Ym2fwddOQ9Vs?pid=ImgGn" width="500" height="500">
