@@ -118,6 +118,7 @@ The Set Cover Problem serves as the backbone of our intelligent delivery distrib
 
 - A **universe** of elements (often denoted as $\{1, 2, \ldots, n\}$).
 - A collection of **subsets** (sets) whose union covers the entire universe.
+<br>
 The task is to identify the smallest sub-collection of sets whose union equals the universe. In other words, we want to find the most efficient way to cover all elements while minimizing the number of selected sets.
 
 <h4>Example:</h4>
