@@ -52,11 +52,9 @@ Replace **<repository_url>** with the actual URL you copied.
 - Use the **BasketSplitter** objects in your code.
 
 <br>
-<h3>Method 2: Direct Download (Quick and Easy)</h3>
+<h3>Method 2: Direct Download</h3>
 
 <h4>Download the JAR File:</h4>
-
-
 
 - If you prefer not to build from source, you can directly **download** the **basket_splitter.jar** file from the repository.
 - Look for the file in the repository’s **code section**.
