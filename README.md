@@ -145,10 +145,12 @@ Clearly, the union of all sets in S covers the entire universe U. However, we ca
 <br>
 
   ```math
-  \{ \{1,2,3,6\}, \{4,5\} \}
+  \{ \{1,2,3,6\}, \{3,4,5\} \}
   ```
 <br>
 Therefore, the solution to the set cover problem in this case has a size of 2.
+<br>
+In our algorithm, we’ve made a small modification to ensure that elements do not repeat, such as 3 in this example. An online shop would not be pleased if items were sent more times than they were ordered. 😉
 
 # Features
 <h3>1. Config File Loading</h3>
