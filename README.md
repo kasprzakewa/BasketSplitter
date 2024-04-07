@@ -90,7 +90,7 @@ java -cp <path_to_jar> Your_App.java
 ```
 <br>
 
-And that’s it! You’re all set to use **BasketSplitter** in your projects. If you’d like to see an **example app**, it’s available in the **source code**.
+And that’s it! You’re all set to use **BasketSplitter** in your projects. If you’d like to see an **example app**, it’s available in the **examples** directory.
 
 # Set Cover Problem for Intelligent Delivery Distribution
 
