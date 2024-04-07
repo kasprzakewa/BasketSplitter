@@ -21,6 +21,12 @@ import java.util.Map;
 
 public class BasketSplitter 
 {  
+    // Maximum number of products in the basket
+    private static final int MAX_PRODUCTS_IN_BASKET = 100;
+    // Maximum number of products in the configuration
+    private static final int MAX_PRODUCTS_IN_CONFIG = 1000;
+    // Maximum number of delivery methods
+    private static final int MAX_DELIVERY_METHODS = 10;
     // Stores the configuration read from the JSON file
     private JSONObject config;
 
@@ -28,13 +34,29 @@ public class BasketSplitter
      * Constructs a BasketSplitter object with the specified configuration file.
      *
      * @param configFilePath The path to the configuration file.
+     * @throws IllegalArgumentException If the configuration is invalid.
      */
-    public BasketSplitter(String configFilePath) 
+    public BasketSplitter(String configFilePath) throws IllegalArgumentException
     {
         try 
         {
             // Load the configuration from the specified file
             config = loadConfig(configFilePath);
+
+            // Check if constraints are violated
+            if (config.keySet().size() > MAX_PRODUCTS_IN_CONFIG) 
+            {
+                throw new IllegalArgumentException("Maximum number of products in configuration exceeded.");
+            }
+
+            for (String key : config.keySet()) 
+            {
+                JSONArray deliveryMethods = config.getJSONArray(key);
+                if (deliveryMethods.length() > MAX_DELIVERY_METHODS)
+                {
+                    throw new IllegalArgumentException("Maximum number of delivery methods exceeded.");
+                }
+            }
         } 
         catch (JSONException | IOException e) 
         {
@@ -47,8 +69,9 @@ public class BasketSplitter
      *
      * @param items The list of items in the basket.
      * @return A map where keys are delivery methods and values are lists of items to be delivered using that method.
+     * @throws IllegalArgumentException If the number of products in the basket exceeds the maximum limit.
      */
-    public Map<String, List<String>> split(List<String> items) 
+    public Map<String, List<String>> split(List<String> items) throws IllegalArgumentException
     {
         // Generate subsets based on delivery methods
         Map<String, List<String>> subsets = subsets(items, config);
@@ -61,6 +84,12 @@ public class BasketSplitter
         List<String> bestSubset;
         int bestSubsetSize;
         List<String> subset;
+
+        // Check if constraints are violated
+        if (items.size() > MAX_PRODUCTS_IN_BASKET) 
+        {
+            throw new IllegalArgumentException("Maximum number of products in the basket exceeded.");
+        }
 
         // Iterate until all items are covered
         while (!uncovered.isEmpty()) 
@@ -95,7 +124,6 @@ public class BasketSplitter
     
         return cover;
     }
-    
 
     /**
      * Loads the configuration from a JSON file.
