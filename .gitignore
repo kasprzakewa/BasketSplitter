@@ -2,8 +2,7 @@
 *.class
 
 # Target directory
-/target/*
-! /target/basket_splitter.jar
+target/
 
 # Reduced pom xml
 dependency-reduced-pom.xml
