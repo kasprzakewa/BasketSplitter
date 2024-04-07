@@ -129,7 +129,7 @@ Let’s illustrate the problem with a simple example:
 <br>
 
   ```math
-  U = {1, 2, 3, 4, 5, 6}
+  U = \{1, 2, 3, 4, 5, 6\}
   ```
 <br>
 
