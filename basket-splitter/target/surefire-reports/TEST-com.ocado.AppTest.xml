@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ocado.AppTest" time="0.027" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ocado.AppTest" time="0.038" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-20/lib"/>
-    <property name="sun.java.command" value="/home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/basket-splitter/target/surefire/surefirebooter18355184726748369719.jar /home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/basket-splitter/target/surefire 2024-04-07T13-44-22_243-jvmRun1 surefire2827279764546647455tmp surefire_012289274272170809932tmp"/>
+    <property name="sun.java.command" value="/home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/basket-splitter/target/surefire/surefirebooter6410659900000991957.jar /home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/basket-splitter/target/surefire 2024-04-07T13-56-59_421-jvmRun1 surefire11839209607546386649tmp surefire_03667268626420267083tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/basket-splitter/target/test-classes:/home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/basket-splitter/target/classes:/home/ewa/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/ewa/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/ewa/.m2/repository/org/json/json/20240303/json-20240303.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/basket-splitter/target/surefire/surefirebooter18355184726748369719.jar"/>
+    <property name="surefire.real.class.path" value="/home/ewa/Desktop/jobs/ocado/java/basket_splitter_git/basket-splitter/target/surefire/surefirebooter6410659900000991957.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20.0.1+9-29"/>
     <property name="user.name" value="ewa"/>
