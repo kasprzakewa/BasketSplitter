@@ -10,7 +10,7 @@
   <packaging>jar</packaging>
 
   <name>basket_splitter</name>
-  <url>https://github.com/kasprzakewa/ParcelRiddle</url>
+  <url>https://github.com/kasprzakewa/BasketSplitter</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,8 +29,12 @@
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
       <version>20240303</version>
-  </dependency>
-  
+    </dependency>
+    <dependency>
+      <groupId>org.skyscreamer</groupId>
+      <artifactId>jsonassert</artifactId>
+      <version>1.5.0</version>
+    </dependency>
   </dependencies>
 
   <build>

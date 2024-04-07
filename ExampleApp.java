@@ -1,3 +1,5 @@
+package com.ocado;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -18,9 +20,9 @@ public class ExampleApp
 
         try 
         {
-            items = splitter.load_basket(basketFilePath);
-            Map<String, List<String>> splittedItems = splitter.split(items);
-            splitter.saveBasket(splittedItems);
+            items = splitter.loadBasket(basketFilePath);
+            Map<String, List<String>> splitItems = splitter.split(items);
+            splitter.saveBasket(splitItems);
         } 
         catch (IOException e) 
         {
