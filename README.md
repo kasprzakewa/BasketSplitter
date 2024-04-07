@@ -22,7 +22,7 @@ Say goodbye to receiving multiple small packages for individual items! BasketSpl
 - Open your terminal or command prompt and run:
 
   ```console
-    git clone <repository_url>
+  git clone <repository_url>
   ```
 
 Replace **<repository_url>** with the actual URL you copied.
@@ -30,13 +30,13 @@ Replace **<repository_url>** with the actual URL you copied.
 <h4>Build the Project:</h4>
 
 - Change into the cloned repository directory:
-```console
-    cd BasketSplitter/basket-splitter
+  ```console
+  cd BasketSplitter/basket-splitter
   ```
 - Run the following Maven command to build the project:
 
   ```console
-    mvn clean package
+  mvn clean package
   ```
 
 - This will generate a **basket_splitter.jar** file in the target directory.
@@ -70,13 +70,13 @@ If you’re working with a Maven project:
 
 - Add the following dependency to your project’s **pom.xml**:
 
-```XML
-<dependency>
-  <groupId>com.ocado.basket</groupId>
-  <artifactId>basket_splitter</artifactId>
-  <version>1.0.0</version>
-</dependency>
-```
+  ```XML
+  <dependency>
+    <groupId>com.ocado.basket</groupId>
+    <artifactId>basket_splitter</artifactId>
+    <version>1.0.0</version>
+  </dependency>
+  ```
 
 <br>
 <h4>Basic Java App:</h4>
@@ -86,15 +86,15 @@ If you’re working with a basic Java application:
 
 - **Compile** your Java code along with the **basket_splitter.jar**:
 
-```console
-javac -cp <path_to_jar> Your_App.java
-```
+  ```console
+  javac -cp <path_to_jar> Your_App.java
+  ```
 
 - **Run** your application:
 
-```console
-java -cp <path_to_jar> Your_App.java
-```
+  ```console
+  java -cp <path_to_jar> Your_App.java
+  ```
 <br>
 
 And that’s it! You’re all set to use **BasketSplitter** in your projects. If you’d like to see an **example app**, it’s available in the **examples** directory.
