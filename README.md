@@ -33,6 +33,10 @@ Replace **<repository_url>** with the actual URL you copied.
   ```console
   cd BasketSplitter/basket-splitter
   ```
+  Temporarily, for recruitment purposes, the repository is named Ewa_Kasprzak_Java_Wroclaw and until this changes, the above command should be replaced with
+  ```console
+  cd Ewa_Kasprzak_Java_Wroclaw/basket-splitter
+  ```
 - Run the following Maven command to build the project:
 
   ```console
