@@ -37,6 +37,20 @@ Replace **<repository_url>** with the actual URL you copied.
   ```console
   cd Ewa_Kasprzak_Java_Wroclaw/basket-splitter
   ```
+- Navigate to the test directory
+  ```console
+  cd src/test/java/com/ocado/
+  ```
+- Change the file paths to:
+  ```console
+  /path/to/cloned/repository/examples/example_file.json
+  ```
+  where example_file.json are example_config.json, example_basket.json, example_output.json.
+
+- Nabigate back to the main repository folder:
+  ```console
+  cd ../../../../../
+  ```
 - Run the following Maven command to build the project:
 
   ```console
